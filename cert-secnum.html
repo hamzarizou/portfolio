@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SecNumAcademy — Certification | Hamza Aarizou</title>
+    <meta name="description" content="Retour détaillé sur ma certification SecNumAcademy (ANSSI) obtenue en 1ʳᵉ année de BTS SIO.">
+    <link rel="icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="scanlines">
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html"><span class="brand-logo"></span><span class="brand-name">Hamza Aarizou</span></a>
+        <nav class="nav-links" aria-label="Navigation principale">
+          <a href="index.html">Accueil</a>
+          <a href="about.html">À propos</a>
+          <a href="projects.html">Projets</a>
+          <a href="certifications.html">Certifications</a>
+          <a href="internship.html">Stage</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="icon-btn" data-toggle-theme aria-label="Basculer le thème">☾</button>
+          <button class="icon-btn burger" data-toggle-menu aria-label="Menu"><span></span></button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <article class="section cert-detail reveal">
+          <div class="cert-header">
+            <div>
+              <p class="kicker">1ʳᵉ année — Hygiène numérique</p>
+              <h1 class="glitch" data-text="SecNumAcademy">SecNumAcademy</h1>
+              <p class="muted">
+                Parcours officiel ANSSI couvrant la culture cybersécurité nationale, la protection des données,
+                l’analyse de risques et la gestion de crise. J’y ai consolidé mes réflexes Blue Team pour sécuriser
+                les projets applicatifs du BTS SIO.
+              </p>
+              <div class="cert-meta" style="margin:16px 0 20px;">
+                <span>🏛️ ANSSI</span>
+                <span>⏱️ 40 h de modules + quiz</span>
+                <span>📍 100 % en ligne</span>
+              </div>
+              <div class="cta-row">
+                <a class="btn" href="assets/pdf/secnum-synthese.pdf" target="_blank" rel="noopener">Télécharger la synthèse PDF</a>
+                <a class="btn secondary" href="certifications.html#secnum">← Retour aux certifications</a>
+              </div>
+            </div>
+            <figure class="cert-visual">
+              <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=900&q=80" alt="Illustration de conformité cybersécurité">
+            </figure>
+          </div>
+
+          <div class="cert-summary">
+            <section>
+              <h2>Modules clés</h2>
+              <ul>
+                <li>Culture SSI & cadre légal ANSSI</li>
+                <li>Méthode EBIOS et cartographie des risques</li>
+                <li>Protection des données, RGPD et sensibilisation</li>
+                <li>Gestion de crise, PRA/PCA et communication</li>
+              </ul>
+            </section>
+            <section>
+              <h2>Compétences mobilisées</h2>
+              <ul>
+                <li>Formalisation de politiques et plans d’action</li>
+                <li>Animation d’ateliers de sensibilisation</li>
+                <li>Veille réglementaire continue (CNIL, ANSSI)</li>
+                <li>Production d’indicateurs et de tableaux de bord</li>
+              </ul>
+            </section>
+            <section>
+              <h2>Livrables</h2>
+              <ul>
+                <li>Checklist hygiène numérique pour PME</li>
+                <li>Analyse de risques synthétique (EBIOS)</li>
+                <li>Matrice de conformité RGPD</li>
+                <li>Note de synthèse PDF personnalisée</li>
+              </ul>
+            </section>
+          </div>
+
+          <section class="cert-pdf">
+            <h2>Synthèse PDF interactive</h2>
+            <p class="muted">Prévisualisez la synthèse directement dans le navigateur ou téléchargez-la via le bouton ci-dessus.</p>
+            <div class="pdf-frame" data-pdf="assets/pdf/secnum-synthese.pdf" data-pdf-title="Synthèse SecNumAcademy"></div>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;">
+        <small>© <span id="year"></span> Hamza Aarizou</small>
+        <div class="social"><a href="https://github.com/hamzarizou" target="_blank" rel="noopener">GitHub</a></div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
+

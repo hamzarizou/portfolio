@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cisco CCNA 1 — Certification | Hamza Aarizou</title>
+    <meta name="description" content="Compte-rendu de la certification Cisco CCNA 1 obtenue en 1ʳᵉ année : réseaux, adressage et durcissement IOS.">
+    <link rel="icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="scanlines">
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html"><span class="brand-logo"></span><span class="brand-name">Hamza Aarizou</span></a>
+        <nav class="nav-links" aria-label="Navigation principale">
+          <a href="index.html">Accueil</a>
+          <a href="about.html">À propos</a>
+          <a href="projects.html">Projets</a>
+          <a href="certifications.html">Certifications</a>
+          <a href="internship.html">Stage</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="icon-btn" data-toggle-theme aria-label="Basculer le thème">☾</button>
+          <button class="icon-btn burger" data-toggle-menu aria-label="Menu"><span></span></button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <article class="section cert-detail reveal">
+          <div class="cert-header">
+            <div>
+              <p class="kicker">1ʳᵉ année — Réseaux & infra</p>
+              <h1 class="glitch" data-text="Cisco CCNA 1">Cisco CCNA 1</h1>
+              <p class="muted">
+                Parcours « Introduction to Networks » de la Cisco Networking Academy. J’y ai construit des
+                architectures IPv4/IPv6, configuré VLAN/VTP et appliqué les bonnes pratiques de durcissement IOS.
+              </p>
+              <div class="cert-meta" style="margin:16px 0 20px;">
+                <span>🌐 Cisco Networking Academy</span>
+                <span>⏱️ 70 h de labs Packet Tracer</span>
+                <span>🧪 Score final&nbsp;:&nbsp;92 %</span>
+              </div>
+              <div class="cta-row">
+                <a class="btn" href="assets/pdf/ccna1-synthese.pdf" target="_blank" rel="noopener">Télécharger la synthèse PDF</a>
+                <a class="btn secondary" href="certifications.html#ccna1">← Retour aux certifications</a>
+              </div>
+            </div>
+            <figure class="cert-visual">
+              <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80" alt="Illustration de réseau Cisco">
+            </figure>
+          </div>
+
+          <div class="cert-summary">
+            <section>
+              <h2>Chapitres clés</h2>
+              <ul>
+                <li>Fondamentaux OSI/TCP-IP et adressage CIDR</li>
+                <li>Configuration VLAN, trunking et routage statique</li>
+                <li>Implémentation IPv6 (SLAAC, DHCPv6, OSPFv3)</li>
+                <li>Durcissement IOS, SSH et journaux</li>
+              </ul>
+            </section>
+            <section>
+              <h2>Notions principales</h2>
+              <ul>
+                <li>Analyse de trames via Wireshark</li>
+                <li>Sécurisation des plans de contrôle</li>
+                <li>Qualité de service et segmentation</li>
+                <li>Documentation d’architectures réseaux</li>
+              </ul>
+            </section>
+            <section>
+              <h2>Livrables</h2>
+              <ul>
+                <li>Topologies Packet Tracer commentées</li>
+                <li>Guide de durcissement IOS (cheatsheet)</li>
+                <li>Rapport de tests de résilience</li>
+                <li>Synthèse PDF détaillant la démarche</li>
+              </ul>
+            </section>
+          </div>
+
+          <section class="cert-pdf">
+            <h2>Synthèse PDF interactive</h2>
+            <p class="muted">Inclut les configurations IOS commentées, captures Wireshark et recommandations de durcissement.</p>
+            <div class="pdf-frame" data-pdf="assets/pdf/ccna1-synthese.pdf" data-pdf-title="Synthèse Cisco CCNA 1"></div>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;">
+        <small>© <span id="year"></span> Hamza Aarizou</small>
+        <div class="social"><a href="https://github.com/hamzarizou" target="_blank" rel="noopener">GitHub</a></div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
+

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Certifications — Hamza Aarizou</title>
+    <meta name="description" content="Certifications obtenues par Hamza Aarizou.">
+    <link rel="icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="scanlines">
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html"><span class="brand-logo"></span><span class="brand-name">Hamza Aarizou</span></a>
+        <nav class="nav-links" aria-label="Navigation principale">
+          <a href="index.html">Accueil</a>
+          <a href="about.html">À propos</a>
+          <a href="projects.html">Projets</a>
+          <a href="certifications.html">Certifications</a>
+          <a href="internship.html">Stage</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="icon-btn" data-toggle-theme aria-label="Basculer le thème">☾</button>
+          <button class="icon-btn burger" data-toggle-menu aria-label="Menu"><span></span></button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="section cert-hero reveal">
+          <div>
+            <p class="kicker">Certifications BTS SIO SLAM</p>
+            <h1 class="glitch" data-text="Veille sécurité & pratique offensive">
+              Veille sécurité & pratique offensive
+            </h1>
+            <p class="muted">
+              Panorama des certifications qui nourrissent ma progression vers les métiers de la
+              cybersécurité : conformités ANSSI, réseau Cisco, automatisation Unity, plateformes
+              d’entraînement offensif et ludification de l’algorithmique.
+            </p>
+            <div class="cert-meta" style="margin-top:18px;">
+              <span>📅 2023 – 2025</span>
+              <span>🎓 BTS SIO (option SLAM)</span>
+              <span>🛡️ Orientation Blue/Purple Team</span>
+            </div>
+          </div>
+          <figure>
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80" alt="Illustration de veille cybersécurité">
+          </figure>
+        </section>
+
+        <section class="section cert-filter reveal">
+          <div>
+            <h2>Filtrer par année</h2>
+            <p class="muted">Visualisez rapidement les parcours suivis en 1<sup>re</sup> et 2<sup>e</sup> année.</p>
+          </div>
+          <div class="filter-chips" role="toolbar" aria-label="Filtre de certifications">
+            <button class="filter-chip" type="button" aria-pressed="true" data-cert-filter="all">Toutes</button>
+            <button class="filter-chip" type="button" aria-pressed="false" data-cert-filter="1">1<sup>re</sup> année</button>
+            <button class="filter-chip" type="button" aria-pressed="false" data-cert-filter="2">2<sup>e</sup> année</button>
+          </div>
+        </section>
+
+        <section class="section reveal">
+          <div class="cert-grid" id="cert-grid" aria-live="polite"></div>
+          <noscript>
+            <p class="muted">Activez JavaScript pour afficher la grille dynamique des certifications.</p>
+          </noscript>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;">
+        <small>© <span id="year"></span> Hamza Aarizou</small>
+        <div class="social"><a href="https://github.com/hamzarizou" target="_blank" rel="noopener">GitHub</a></div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script id="cert-data" type="application/json">
+      [
+        {
+          "id": "secnum",
+          "title": "SecNumAcademy",
+          "provider": "ANSSI",
+          "year": "1",
+          "category": "Hygiène et conformité",
+          "summary": "Fondamentaux SSI, RGPD, gestion de crise et cartographie des risques.",
+          "keywords": ["SSI", "RGPD", "Gestion des risques"],
+          "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=900&q=80",
+          "detail": "cert-secnum.html",
+          "pdf": "assets/pdf/secnum-synthese.pdf"
+        },
+        {
+          "id": "unity",
+          "title": "Unity Junior Programmer",
+          "provider": "Unity Learn",
+          "year": "1",
+          "category": "Développement applicatif",
+          "summary": "Scripting C#, pipeline 3D, patterns d’architecture et automatisation.",
+          "keywords": ["C#", "Automatisation", "UX temps réel"],
+          "image": "https://images.unsplash.com/photo-1470246973918-29a93221c455?auto=format&fit=crop&w=900&q=80",
+          "detail": "cert-unity.html",
+          "pdf": "assets/pdf/unity-synthese.pdf"
+        },
+        {
+          "id": "ccna1",
+          "title": "Cisco CCNA 1",
+          "provider": "Cisco Networking Academy",
+          "year": "1",
+          "category": "Réseaux & infrastructures",
+          "summary": "Adressage IPv4/IPv6, VLAN, configuration IOS et sécurisation de base.",
+          "keywords": ["Routing", "Switching", "IPv6"],
+          "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+          "detail": "cert-ccna1.html",
+          "pdf": "assets/pdf/ccna1-synthese.pdf"
+        },
+        {
+          "id": "tryhackme",
+          "title": "TryHackMe Advent of Cyber",
+          "provider": "TryHackMe",
+          "year": "2",
+          "category": "Red teaming & SOC",
+          "summary": "Méthodologies offensives guidées, détection SOC et automatisation des rapports.",
+          "keywords": ["Pentest", "SOC", "CTF"],
+          "image": "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=900&q=80",
+          "detail": "cert-tryhackme.html",
+          "pdf": "tryhackme-cert.pdf.docx"
+        },
+        {
+          "id": "codingame",
+          "title": "CodinGame Challenge",
+          "provider": "CodinGame",
+          "year": "2",
+          "category": "Algorithmique avancée",
+          "summary": "Optimisation, IA heuristique et écriture de bots en temps contraint.",
+          "keywords": ["Algorithmes", "IA", "Optimisation"],
+          "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
+          "detail": "cert-codingame.html",
+          "pdf": "assets/pdf/codingame-synthese.pdf"
+        },
+        {
+          "id": "rootme",
+          "title": "Root-Me Progression",
+          "provider": "Root-Me",
+          "year": "2",
+          "category": "Exploit & forensic",
+          "summary": "Exercices Web, Reverse, Forensic et exploitation système avec rapports.",
+          "keywords": ["Reverse", "Forensic", "Web exploitation"],
+          "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
+          "detail": "cert-rootme.html",
+          "pdf": "assets/pdf/rootme-synthese.pdf"
+        }
+      ]
+    </script>
+    <script>
+      (function () {
+        const dataEl = document.getElementById('cert-data');
+        if (!dataEl) return;
+        let certifications = [];
+        try {
+          certifications = JSON.parse(dataEl.textContent.trim());
+        } catch (error) {
+          console.error('Impossible de parser les certifications', error);
+          return;
+        }
+
+        const grid = document.getElementById('cert-grid');
+        const filterButtons = document.querySelectorAll('[data-cert-filter]');
+        let currentFilter = 'all';
+
+        function render(filter = 'all') {
+          if (!grid) return;
+          const filtered = certifications.filter((cert) => filter === 'all' || cert.year === filter);
+
+          grid.innerHTML = filtered
+            .map((cert) => {
+              const tags = cert.keywords
+                .map((tag) => `<span class="tag">${tag}</span>`)
+                .join('');
+              const pdfBtn = cert.pdf
+                ? `<a class="btn secondary" href="${cert.pdf}" target="_blank" rel="noopener">PDF</a>`
+                : '';
+              return `
+                <article class="cert-card" data-cert="${cert.id}" data-year="${cert.year}">
+                  <figure>
+                    <img src="${cert.image}" alt="${cert.title}">
+                  </figure>
+                  <div class="cert-content">
+                    <div class="cert-meta">
+                      <span>📅 ${cert.year === '1' ? '1ʳᵉ année' : '2ᵉ année'}</span>
+                      <span>🏷️ ${cert.category}</span>
+                    </div>
+                    <h3>${cert.title}</h3>
+                    <p class="muted">${cert.summary}</p>
+                    <div class="tags">${tags}</div>
+                    <div class="card-actions">
+                      <a class="btn" href="${cert.detail}">Consulter la page</a>
+                      ${pdfBtn}
+                    </div>
+                  </div>
+                </article>
+              `;
+            })
+            .join('');
+        }
+
+        function setFilter(value) {
+          currentFilter = value;
+          filterButtons.forEach((btn) => {
+            const isActive = btn.dataset.certFilter === value;
+            btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+          });
+          render(value);
+        }
+
+        document.addEventListener('click', (event) => {
+          const btn = event.target.closest('[data-cert-filter]');
+          if (!btn) return;
+          const value = btn.dataset.certFilter || 'all';
+          if (value === currentFilter) return;
+          setFilter(value);
+        });
+
+        render(currentFilter);
+      })();
+    </script>
+    <script src="js/main.js" defer></script>
+  </body>
+  </html>
+
+
+

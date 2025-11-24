@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Unity Junior Programmer — Certification | Hamza Aarizou</title>
+    <meta name="description" content="Décomposition de ma certification Unity Junior Programmer, orientée automatisation et UX temps réel.">
+    <link rel="icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="scanlines">
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html"><span class="brand-logo"></span><span class="brand-name">Hamza Aarizou</span></a>
+        <nav class="nav-links" aria-label="Navigation principale">
+          <a href="index.html">Accueil</a>
+          <a href="about.html">À propos</a>
+          <a href="projects.html">Projets</a>
+          <a href="certifications.html">Certifications</a>
+          <a href="internship.html">Stage</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="icon-btn" data-toggle-theme aria-label="Basculer le thème">☾</button>
+          <button class="icon-btn burger" data-toggle-menu aria-label="Menu"><span></span></button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <article class="section cert-detail reveal">
+          <div class="cert-header">
+            <div>
+              <p class="kicker">1ʳᵉ année — Développement interactif</p>
+              <h1 class="glitch" data-text="Unity Junior Programmer">Unity Junior Programmer</h1>
+              <p class="muted">
+                Certification Unity Learn axée sur la programmation C#, la création d’interfaces interactives
+                et l’industrialisation de pipelines 2D/3D. Ce parcours m’aide à prototyper des environnements
+                immersifs utiles aux démonstrations de sécurité offensive.
+              </p>
+              <div class="cert-meta" style="margin:16px 0 20px;">
+                <span>🎮 Unity Technologies</span>
+                <span>⏱️ 30 h de challenges guidés</span>
+                <span>🧩 Validation par projet</span>
+              </div>
+              <div class="cta-row">
+                <a class="btn" href="assets/pdf/unity-synthese.pdf" target="_blank" rel="noopener">Télécharger la synthèse PDF</a>
+                <a class="btn secondary" href="certifications.html#unity">← Retour aux certifications</a>
+              </div>
+            </div>
+            <figure class="cert-visual">
+              <img src="https://images.unsplash.com/photo-1470246973918-29a93221c455?auto=format&fit=crop&w=900&q=80" alt="Illustration de développement Unity">
+            </figure>
+          </div>
+
+          <div class="cert-summary">
+            <section>
+              <h2>Chapitres principaux</h2>
+              <ul>
+                <li>Principes SOLID appliqués à Unity</li>
+                <li>Gestion d’assets et optimisation mémoire</li>
+                <li>Interfaces HUD et feedback utilisateurs</li>
+                <li>Automatisation du build & tests PlayMode</li>
+              </ul>
+            </section>
+            <section>
+              <h2>Notions mobilisées</h2>
+              <ul>
+                <li>C# async/await pour scripts réactifs</li>
+                <li>Patrons Observateur et État</li>
+                <li>Profiling GPU/CPU et réglages URP</li>
+                <li>CI/CD sur GitHub Actions pour Unity</li>
+              </ul>
+            </section>
+            <section>
+              <h2>Résultats</h2>
+              <ul>
+                <li>Prototype 3D de salle serveur interactive</li>
+                <li>Bibliothèque de scripts réutilisables</li>
+                <li>Document de guideline UX temps réel</li>
+                <li>Vidéo de démonstration sécurisée</li>
+              </ul>
+            </section>
+          </div>
+
+          <section class="cert-pdf">
+            <h2>Synthèse PDF interactive</h2>
+            <p class="muted">Support complet détaillant la stack logicielle, les scripts clés et les mesures de performance.</p>
+            <div class="pdf-frame" data-pdf="assets/pdf/unity-synthese.pdf" data-pdf-title="Synthèse Unity Junior Programmer"></div>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;">
+        <small>© <span id="year"></span> Hamza Aarizou</small>
+        <div class="social"><a href="https://github.com/hamzarizou" target="_blank" rel="noopener">GitHub</a></div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
+

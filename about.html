@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>À propos — Hamza Aarizou</title>
+    <meta name="description" content="Présentation et compétences de Hamza Aarizou, BTS SIO SISR.">
+    <link rel="icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="scanlines">
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html"><span class="brand-logo"></span><span class="brand-name">Hamza Aarizou</span></a>
+        <nav class="nav-links" aria-label="Navigation principale">
+          <a href="index.html">Accueil</a>
+          <a href="about.html">À propos</a>
+          <a href="projects.html">Projets</a>
+          <a href="certifications.html">Certifications</a>
+          <a href="internship.html">Stage</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="icon-btn" data-toggle-theme aria-label="Basculer le thème">☾</button>
+          <button class="icon-btn burger" data-toggle-menu aria-label="Menu"><span></span></button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="section reveal">
+          <h2>À propos</h2>
+          <div class="grid">
+            <article class="card" style="grid-column: span 8;">
+              <h3>Bonjour, je suis Hamza 👋</h3>
+              <p>Étudiant en BTS SIO option SISR, passionné par l’infrastructure réseau et la cybersécurité. J’aime comprendre comment les systèmes s’assemblent, les sécuriser et les automatiser pour gagner en fiabilité.</p>
+              <p>Je valorise la clarté, la documentation et les environnements propres. J’apprends vite et j’aime les défis techniques.</p>
+            </article>
+            <aside class="card" style="grid-column: span 4;">
+              <h3>Infos rapides</h3>
+              <p class="muted">Localisation: France • Disponible pour alternance/stage</p>
+              <a class="btn" href="https://github.com/hamzarizou" target="_blank" rel="noopener">GitHub</a>
+            </aside>
+          </div>
+        </section>
+
+        <section class="section reveal">
+          <h2>Compétences</h2>
+          <div class="skills">
+            <div class="skill"><span>Réseaux (VLAN, routage, firewall)</span><div class="skill-bar" aria-hidden="true"><span style="width:80%"></span></div></div>
+            <div class="skill"><span>Linux & Bash</span><div class="skill-bar"><span style="width:85%"></span></div></div>
+            <div class="skill"><span>Windows Server / AD</span><div class="skill-bar"><span style="width:70%"></span></div></div>
+            <div class="skill"><span>Python (scripts)</span><div class="skill-bar"><span style="width:75%"></span></div></div>
+            <div class="skill"><span>Supervision & sauvegardes</span><div class="skill-bar"><span style="width:78%"></span></div></div>
+            <div class="skill"><span>Sécurité (durcissement, audit basique)</span><div class="skill-bar"><span style="width:72%"></span></div></div>
+          </div>
+        </section>
+
+        
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;">
+        <small>© <span id="year"></span> Hamza Aarizou</small>
+        <div class="social"><a href="https://github.com/hamzarizou" target="_blank" rel="noopener">GitHub</a></div>
+      </div>
+    </footer>
+
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script src="js/main.js" defer></script>
+  </body>
+  </html>
+
+

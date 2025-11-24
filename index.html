@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hamza Aarizou — Portfolio</title>
+    <meta name="description" content="Étudiant BTS SIO SISR passionné par l’infrastructure réseau & la cybersécurité.">
+    <link rel="icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="scanlines">
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html" aria-label="Accueil Hamza Aarizou">
+          <span class="brand-logo" aria-hidden="true"></span>
+          <span class="brand-name">Hamza Aarizou</span>
+        </a>
+        <nav class="nav-links" aria-label="Navigation principale">
+          <a href="index.html">Accueil</a>
+          <a href="about.html">À propos</a>
+          <a href="projects.html">Projets</a>
+          <a href="certifications.html">Certifications</a>
+          <a href="internship.html">Stage</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="icon-btn" data-toggle-theme aria-label="Basculer le thème" title="Thème">
+            ☾
+          </button>
+          <button class="icon-btn burger" data-toggle-menu aria-label="Menu" title="Menu">
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="hero section reveal">
+          <div class="hero-card">
+            <span class="kicker">BTS SIO • Option SISR</span>
+            <h1 class="glitch" data-text="Cybersécurité & Réseaux">Cybersécurité & Réseaux</h1>
+            <p>Construire, automatiser, sécuriser : ma vision de l’infrastructure réseau.</p>
+            <div class="cta-row">
+              <a class="btn" href="projects.html">Voir mes projets</a>
+              <a class="btn secondary" href="https://github.com/hamzarizou" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+          <div class="terminal hero-card">
+            <div><span class="prompt">hamza@portfolio</span>:~$ <span data-typewrite data-text="> whoami"></span><span class="cursor"> </span></div>
+            <div class="spacer"></div>
+            <div><span class="prompt">hamza@portfolio</span>:~$ Étudiant BTS SIO SISR | Cyber • Réseaux</div>
+            <div><span class="prompt">hamza@portfolio</span>:~$ Stage: Labo de maths — sécurité réseau & automatisation sauvegardes</div>
+          </div>
+        </section>
+
+        <section class="section reveal">
+          <h2>Points forts</h2>
+          <div class="grid">
+            <article class="card">
+              <h3>Réseaux</h3>
+              <p>Conception et sécurisation d’infrastructures, VLANs, pare-feu, supervision.</p>
+            </article>
+            <article class="card">
+              <h3>Automatisation</h3>
+              <p>Scripts Bash et Python pour déploiement, sauvegardes et inventaires.</p>
+            </article>
+            <article class="card">
+              <h3>Cybersécurité</h3>
+              <p>Durcissement, audit basique, lab virtuel et bonnes pratiques de défense.</p>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;">
+        <small>© <span id="year"></span> Hamza Aarizou</small>
+        <div class="social">
+          <a href="https://github.com/hamzarizou" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="js/main.js" defer></script>
+  </body>
+  </html>
+
+
