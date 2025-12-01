@@ -68,22 +68,6 @@
   }
   document.querySelectorAll('[data-typewrite]').forEach(typewrite);
 
-  // PDF embeds
-  document.querySelectorAll('[data-pdf]').forEach((box) => {
-    const src = (box.getAttribute('data-pdf') || '').trim();
-    if (!src) return;
-    const title = box.getAttribute('data-pdf-title') || 'Synthèse PDF';
-    if (!/\.pdf(\?|$)/i.test(src)) {
-      box.classList.add('is-placeholder');
-      box.innerHTML = '<p class="muted">Ajoutez un fichier PDF pour activer l\'aperçu intégré.</p>';
-      return;
-    }
-    const iframe = document.createElement('iframe');
-    iframe.src = src.includes('#') ? src : `${src}#toolbar=0`;
-    iframe.title = title;
-    box.appendChild(iframe);
-  });
-
   // Contact form
   const form = document.querySelector('form[data-contact]');
   if (form) {

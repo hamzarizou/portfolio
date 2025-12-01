@@ -15,7 +15,6 @@
         <nav class="nav-links" aria-label="Navigation principale">
           <a href="index.html">Accueil</a>
           <a href="about.html">À propos</a>
-          <a href="projects.html">Projets</a>
           <a href="certifications.html">Certifications</a>
           <a href="internship.html">Stage</a>
           <a href="contact.html">Contact</a>
@@ -32,17 +31,17 @@
         <section class="section cert-hero reveal">
           <div>
             <p class="kicker">Certifications BTS SIO SISR</p>
-            <h1 class="glitch" data-text="Veille sécurité & pratique offensive">
-              Veille sécurité & pratique offensive
+            <h1 class="glitch" data-text="Pratique offensive & socle système">
+              Pratique offensive & socle système
             </h1>
             <p class="muted">
-              Panorama des certifications qui nourrissent ma progression vers les métiers de la
-              cybersécurité : conformités ANSSI, réseau Cisco, automatisation Unity, plateformes
-              d’entraînement offensif et ludification de l’algorithmique.
+              Chaque certification TryHackMe vient renforcer mes fondamentaux en investigation offensive et en
+              administration Linux afin de préparer mes futures missions en cybersécurité défensive.
             </p>
             <div class="cert-meta" style="margin-top:18px;">
-              <span>📅 2024 – 2026</span>
+              <span>📅 2024 – 2025</span>
               <span>🎓 BTS SIO (option SISR)</span>
+              <span>🛡️ Orientation SOC / Blue Team</span>
             </div>
           </div>
           <figure>
@@ -89,71 +88,54 @@
           "provider": "ANSSI",
           "year": "1",
           "category": "Hygiène et conformité",
-          "summary": "Fondamentaux SSI, RGPD, gestion de crise et cartographie des risques.",
-          "keywords": ["SSI", "RGPD", "Gestion des risques"],
-          "image": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=900&q=80",
-          "detail": "cert-secnum.html",
-          "pdf": "assets/pdf/secnum-synthese.pdf"
+          "summary": "Culture SSI nationale, RGPD, cartographie des risques et pilotage d’un plan de sécurité.",
+          "keywords": ["SSI", "RGPD", "Gouvernance"],
+          "image": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=900&q=80",
+          "detail": "cert-secnum.html"
         },
         {
-          "id": "unity",
-          "title": "Unity Junior Programmer",
-          "provider": "Unity Learn",
-          "year": "1",
-          "category": "Développement applicatif",
-          "summary": "Scripting C#, pipeline 3D, patterns d’architecture et automatisation.",
-          "keywords": ["C#", "Automatisation", "UX temps réel"],
-          "image": "https://images.unsplash.com/photo-1470246973918-29a93221c455?auto=format&fit=crop&w=900&q=80",
-          "detail": "cert-unity.html",
-          "pdf": "assets/pdf/unity-synthese.pdf"
+          "id": "search-skills",
+          "title": "Search Skills",
+          "provider": "TryHackMe",
+          "year": "2",
+          "category": "Recon & investigation",
+          "summary": "Recherche d’informations ciblées, OSINT et automatisation de la collecte d’indices.",
+          "keywords": ["OSINT", "Recon", "Automation"],
+          "image": "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=900&q=80",
+          "detail": "cert-search-skills.html"
         },
         {
-          "id": "ccna1",
-          "title": "Cisco CCNA 1",
-          "provider": "Cisco Networking Academy",
-          "year": "1",
-          "category": "Réseaux & infrastructures",
-          "summary": "Adressage IPv4/IPv6, VLAN, configuration IOS et sécurisation de base.",
-          "keywords": ["Routing", "Switching", "IPv6"],
-          "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
-          "detail": "cert-ccna1.html",
-          "pdf": "assets/pdf/ccna1-synthese.pdf"
+          "id": "linux-fundamentals",
+          "title": "Linux Fundamentals",
+          "provider": "TryHackMe",
+          "year": "2",
+          "category": "Systèmes & réseaux",
+          "summary": "Administration Linux, permissions, services réseau et sécurisation de la ligne de commande.",
+          "keywords": ["Linux", "CLI", "Permissions"],
+          "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80",
+          "detail": "cert-linux-fundamentals.html"
         },
         {
-          "id": "tryhackme",
-          "title": "TryHackMe Advent of Cyber",
+          "id": "windows-fundamentals",
+          "title": "Windows Fundamentals",
+          "provider": "TryHackMe",
+          "year": "2",
+          "category": "Systèmes & réseaux",
+          "summary": "Découverte de l’écosystème Windows : PowerShell, services, durcissement basique et dépannage.",
+          "keywords": ["Windows", "PowerShell", "Hardening"],
+          "image": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=900&q=80",
+          "detail": "cert-windows-fundamentals.html"
+        },
+        {
+          "id": "offensive-intro",
+          "title": "Offensive Security Intro",
           "provider": "TryHackMe",
           "year": "2",
           "category": "Red teaming & SOC",
-          "summary": "Méthodologies offensives guidées, détection SOC et automatisation des rapports.",
-          "keywords": ["Pentest", "SOC", "CTF"],
-          "image": "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=900&q=80",
-          "detail": "cert-tryhackme.html",
-          "pdf": "tryhackme-cert.pdf.docx"
-        },
-        {
-          "id": "codingame",
-          "title": "CodinGame Challenge",
-          "provider": "CodinGame",
-          "year": "2",
-          "category": "Algorithmique avancée",
-          "summary": "Optimisation, IA heuristique et écriture de bots en temps contraint.",
-          "keywords": ["Algorithmes", "IA", "Optimisation"],
-          "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
-          "detail": "cert-codingame.html",
-          "pdf": "assets/pdf/codingame-synthese.pdf"
-        },
-        {
-          "id": "rootme",
-          "title": "Root-Me Progression",
-          "provider": "Root-Me",
-          "year": "2",
-          "category": "Exploit & forensic",
-          "summary": "Exercices Web, Reverse, Forensic et exploitation système avec rapports.",
-          "keywords": ["Reverse", "Forensic", "Web exploitation"],
+          "summary": "Chaîne d’attaque MITRE, exploitation guidée et rédaction structurée des comptes rendus d’intrusion.",
+          "keywords": ["Pentest", "MITRE", "Reporting"],
           "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
-          "detail": "cert-rootme.html",
-          "pdf": "assets/pdf/rootme-synthese.pdf"
+          "detail": "cert-offensive-intro.html"
         }
       ]
     </script>
@@ -182,11 +164,8 @@
               const tags = cert.keywords
                 .map((tag) => `<span class="tag">${tag}</span>`)
                 .join('');
-              const pdfBtn = cert.pdf
-                ? `<a class="btn secondary" href="${cert.pdf}" target="_blank" rel="noopener">PDF</a>`
-                : '';
               return `
-                <article class="cert-card" data-cert="${cert.id}" data-year="${cert.year}">
+                <article class="cert-card" id="${cert.id}" data-cert="${cert.id}" data-year="${cert.year}">
                   <figure>
                     <img src="${cert.image}" alt="${cert.title}">
                   </figure>
@@ -200,7 +179,6 @@
                     <div class="tags">${tags}</div>
                     <div class="card-actions">
                       <a class="btn" href="${cert.detail}">Consulter la page</a>
-                      ${pdfBtn}
                     </div>
                   </div>
                 </article>

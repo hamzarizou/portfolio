@@ -366,34 +366,6 @@ footer a:hover { color: var(--color-accent); text-shadow: var(--glow-1); }
   color: var(--color-accent);
 }
 
-.cert-pdf {
-  border-radius: var(--radius);
-  border: 1px solid rgba(255,255,255,0.06);
-  background: var(--color-bg-elev);
-  padding: 20px;
-}
-.pdf-frame {
-  margin-top: 16px;
-  border-radius: var(--radius);
-  border: 1px dashed rgba(255,255,255,0.12);
-  background: rgba(0,0,0,0.3);
-  position: relative;
-  overflow: hidden;
-}
-.pdf-frame iframe {
-  width: 100%;
-  height: clamp(320px, 60vh, 640px);
-  border: none;
-}
-.pdf-frame.is-placeholder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 20px;
-  font-style: italic;
-  color: var(--color-muted);
-}
-
 @media (max-width: 980px) {
   .cert-hero,
   .cert-header {
